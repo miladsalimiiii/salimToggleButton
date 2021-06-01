@@ -1,0 +1,3 @@
+rootProject.name = "Salim Toggle Button example"
+include ':app'
+include ':salimToggleButton'

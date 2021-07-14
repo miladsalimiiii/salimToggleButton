@@ -16,8 +16,30 @@
             <enum name="TWO" value="2"/>
             <enum name="THREE" value="3" />
         </attr>
+        <attr name="selectType" format="enum">
+            <enum name="HIGHLIGHT" value="1"/>
+            <enum name="INDICATOR" value="2"/>
+        </attr>
+
         <attr name="firstTextOfButton" format="string" />
         <attr name="secondTextOfButton" format="string" />
         <attr name="thirdTextOfButton" format="string" />
+        <attr name="underLineWidth" format="dimension"/>
+        <attr name="underLineColor" format="color"/>
     </declare-styleable>
+
+    <declare-styleable name="UnderlinedTextView" >
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="underlineOffset" format="dimension" />
+        <attr name="underlineColor" format="color" />
+        <attr name="underLinePosition" format="enum">
+            <enum name="baseline" value="0" />
+            <enum name="below" value="1" />
+        </attr>
+        <attr name="selectedType" format="enum">
+            <enum name="HIGHLIGHT" value="1"/>
+            <enum name="INDICATOR" value="2"/>
+        </attr>
+    </declare-styleable>
+
 </resources>

@@ -1,38 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout_all_choosePeriodOfTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <TextView
+        <com.milad.salimtogglebutton.common.UnderlinedTextView
             android:id="@+id/textView_all_first"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
-            android:layout_weight="1"
             android:gravity="center"
-            android:tag="unselected" />
+            android:tag="unselected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_all_second"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:underLinePosition="below"
+            app:underlineColor="#ffc112"
+            app:underlineHeight="6dp"
+            tools:text="1" />
 
-        <TextView
+
+        <com.milad.salimtogglebutton.common.UnderlinedTextView
             android:id="@+id/textView_all_second"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
-            android:layout_weight="1"
             android:gravity="center"
-            android:tag="unselected" />
+            android:tag="unselected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView_all_third"
+            app:layout_constraintStart_toEndOf="@id/textView_all_first"
+            app:layout_constraintTop_toTopOf="parent"
+            app:underLinePosition="below"
+            app:underlineColor="#ffc112"
+            app:underlineHeight="6dp"
+            tools:text="2" />
 
-        <TextView
+
+        <com.milad.salimtogglebutton.common.UnderlinedTextView
             android:id="@+id/textView_all_third"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
-            android:layout_weight="1"
             android:gravity="center"
-            android:tag="unselected" />
-    </LinearLayout>
+            android:tag="unselected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textView_all_second"
+            app:layout_constraintTop_toTopOf="parent"
+            app:underLinePosition="below"
+            app:underlineColor="#ffc112"
+            app:underlineHeight="6dp"
+            tools:text="3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

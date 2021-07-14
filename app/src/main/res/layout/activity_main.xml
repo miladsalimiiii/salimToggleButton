@@ -27,7 +27,7 @@
             app:rootBackground="@drawable/drawable_all_togglebuttonbackground"
             app:secondTextOfButton="2"
             app:selectedButton="THREE"
-            app:selectedTextColor="@color/purple_200"
+            app:selectedTextColor="@color/white"
             app:thirdTextOfButton="3"
             app:unSelectedTextColor="@color/black" />
 
